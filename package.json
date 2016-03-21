@@ -1,0 +1,27 @@
+{
+  "name": "angular2-cli",
+  "version": "0.1.0",
+  "description": "Command Line Interface for Angular 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/runner"
+  },
+  "engines": {
+    "node": ">= 4.1.0"
+  },
+  "keywords": [
+    "angular2",
+    "CLI",
+    "ng2"
+  ],
+  "author": "Madhusudhan Dollu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madhusudhand/angular2-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/madhusudhand/angular2-cli/issues"
+  },
+  "homepage": "https://github.com/madhusudhand/angular2-cli#readme"
+}
