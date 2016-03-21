@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+'use strict';
+
+// Provide a title to the process in `ps`
+process.title = 'angular2-cli';
+
+const pkg = require('../package.json');
+const resolve = require('resolve');
+const exit = require('exit');
