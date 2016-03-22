@@ -2,9 +2,12 @@
   "name": "angular2-cli",
   "version": "0.1.0",
   "description": "Command Line Interface for developing Angular 2 apps",
-  "main": "index.js",
+  "main": "./lib/cli/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ng2": "./bin/ng2"
   },
   "engines": {
     "node": ">= 4.1.0"
@@ -23,5 +26,10 @@
   "bugs": {
     "url": "https://github.com/madhusudhand/angular2-cli/issues"
   },
-  "homepage": "https://github.com/madhusudhand/angular2-cli#readme"
+  "homepage": "https://github.com/madhusudhand/angular2-cli#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "export-files": "^2.1.1",
+    "resolve-require": "^0.2.0"
+  }
 }

@@ -1,4 +1,4 @@
-sudo: false
+sudo: true
 env:
   - NODE_VERSION=4
   - NODE_VERSION=5
