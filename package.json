@@ -30,8 +30,10 @@
   "dependencies": {
     "colors": "^1.1.2",
     "commander": "^2.9.0",
+    "core-object": "^2.0.0",
     "export-files": "^2.1.1",
-    "ncp": "^2.0.0"
+    "ncp": "^2.0.0",
+    "promise": "^7.1.1"
   },
   "devDependencies": {
     "eslint": "^2.4.0"
