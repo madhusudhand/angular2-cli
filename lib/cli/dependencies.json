@@ -1,21 +1,8 @@
 {
   "prod": [
-    "angular2",
     "systemjs"
   ],
   "dev": [
-    "angular2-cli",
-    "grunt",
-    "grunt-cli",
-    "grunt-browser-sync",
-    "grunt-contrib-clean",
-    "grunt-contrib-concat",
-    "grunt-contrib-copy",
-    "grunt-contrib-cssmin",
-    "grunt-contrib-jade",
-    "grunt-contrib-uglify",
-    "grunt-contrib-watch",
-    "grunt-sass",
-    "grunt-ts"
+    "grunt"
   ]
 }
