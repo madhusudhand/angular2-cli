@@ -1,6 +1,6 @@
 {
   "name": "angular2-cli",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Command Line Interface for developing Angular 2 apps",
   "main": "./lib/cli/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "keywords": [
     "angular2",
-    "CLI",
+    "cli",
     "ng2"
   ],
   "author": "Madhusudhan Dollu",
