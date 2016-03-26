@@ -32,12 +32,12 @@
     "colors": "^1.1.2",
     "commander": "^2.9.0",
     "core-object": "^2.0.0",
-    "enpeem": "^2.1.0",
     "export-files": "^2.1.1",
     "log-update": "^1.0.2",
     "ncp": "^2.0.0",
     "object-assign": "^4.0.1",
-    "promise": "^7.1.1"
+    "promise": "^7.1.1",
+    "stream-reduce": "^1.0.3"
   },
   "devDependencies": {
     "eslint": "^2.4.0"
