@@ -10,10 +10,12 @@
   "main": "Gruntfile.js",
   "angular2-cli": {},
   "scripts": {
-    "start": "npm run grunt:dev",
+    "start": "npm run grunt:serve",
+    "build": "npm run grunt:dev",
     "publish": "npm run grunt:dist",
     "grunt": "grunt",
     "grunt:dev": "grunt dev",
-    "grunt:dist": "grunt dist"
+    "grunt:dist": "grunt dist",
+    "grunt:serve": "grunt serve"
   }
 }

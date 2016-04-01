@@ -192,7 +192,6 @@ module.exports = function(grunt){
   grunt.initConfig(grunt.util._.extend(config, build_config, libraries));
 
   grunt.registerTask('default', ['clean:pre_build']);
-  grunt.registerTask('postinstall', ['copy:dependencies']);
   grunt.registerTask('dev', [
     'clean:pre_build',
     'jade:dev',
@@ -200,8 +199,6 @@ module.exports = function(grunt){
     'concat:sass',
     'sass',
     'copy',
-    'browserSync',
-    'watch'
   ]);
   grunt.registerTask('dist', [
     'init',
@@ -211,6 +208,11 @@ module.exports = function(grunt){
     'cssmin',
     'uglify',
     'clean:post_build'
+  ]);
+
+  grunt.registerTask('serve', [
+    'browserSync',
+    'watch'
   ]);
 
 }
