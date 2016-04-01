@@ -11,8 +11,8 @@
   "angular2-cli": {},
   "scripts": {
     "start": "npm run grunt:serve",
-    "build": "npm run grunt:dev",
-    "publish": "npm run grunt:dist",
+    "build:dev": "npm run grunt:dev",
+    "build:dist": "npm run grunt:dist",
     "grunt": "grunt",
     "grunt:dev": "grunt dev",
     "grunt:dist": "grunt dist",
