@@ -1,6 +1,7 @@
 {
   "name": "app-name",
   "license": "Apache-2.0",
+  "private": true,
   "version": "0.0.0",
   "readme": "README.md",
   "keywords": [

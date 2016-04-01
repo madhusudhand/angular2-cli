@@ -15,6 +15,7 @@
     "grunt-contrib-jade",
     "grunt-contrib-uglify",
     "grunt-contrib-watch",
+    "grunt-newer",
     "grunt-sass",
     "grunt-ts"
   ]
