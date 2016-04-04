@@ -18,5 +18,9 @@
     "grunt:dev": "grunt dev",
     "grunt:dist": "grunt dist",
     "grunt:serve": "grunt serve"
+  },
+  "dependencies": {
+    "angular2": "*",
+    "systemjs": "*"
   }
 }
