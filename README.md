@@ -17,10 +17,18 @@ $ npm install -g angular2-cli
 Creating your angular2 app
 
 ```sh
-$ ng2 init <app-name>
+$ ng2 create <app-name>
 ```
 
-Running your app
+Running your app for the first time
+
+```sh
+$ cd <app-folder>
+$ ng2 init
+$ ng2 serve
+```
+
+Anytime later
 
 ```sh
 $ cd <app-folder>
@@ -30,7 +38,7 @@ $ ng2 serve
 #### What you can code
 
 * [Angular 2][angular] with [Typescript][ts]
-* [Jade] or **HTML** - for html templating
+* [Jade] - for html templating
 * [SASS] - for CSS styling
 
 #### Why these?
@@ -53,13 +61,6 @@ your-app/src/app
  - Please do refere [John Papa's Angular 2 style-guide][a2sg].
 
 ## Source control
-If you have cloned the repo then it leaves a `.git` folder in your project.
-Delete this folder by running
-
-```sh
-$ cd <path/to/your/app>
-$ rm -rf .git
-```
 
 Consider taking the following steps to add you project to Git.
 
