@@ -60,22 +60,9 @@ your-app/src/app
  - Keep the app origanized by creating hierarchy of folders. It is always good idea to limit this hierarchy to atmost 5 levels.
  - Please do refere [John Papa's Angular 2 style-guide][a2sg].
 
-## Source control
+#Scaffolding
 
-Consider taking the following steps to add you project to Git.
-
-```sh
-$ git init
-$ git add .
-$ git commit -m "Initial commit"
-```
-
-Create a remote repository for this project on the service of your choice and push the local repo to the remote.
-
-```
-$ git remote add origin <repo-address>
-$ git push -u origin master
-```
+> Coming soon
 
 
 ## License
