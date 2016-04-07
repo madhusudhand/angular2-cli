@@ -1,4 +1,5 @@
 node_modules/
+typings/
 .tscache/
 dist/
 tmp/

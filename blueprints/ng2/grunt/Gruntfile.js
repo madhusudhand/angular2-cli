@@ -146,11 +146,11 @@ module.exports = function(grunt){
         tasks: ['jade:dev']
       },
 
-      // js watch
-      // js: {
-      //   files: ['<%= app_dir %>/*.js', '<%= app_dir %>/**/*.js'],
-      //   tasks: ['concat:app_js','uglify:app']
-      // }
+      // ts watch
+      ts: {
+        files: ['<%= app_dir %>/*.ts', '<%= app_dir %>/**/*.ts'],
+        tasks: ['ts']
+      }
 
       // sass watch
 
