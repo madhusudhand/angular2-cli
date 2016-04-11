@@ -25,6 +25,7 @@
     "systemjs": "*"
   },
   "devDependencies": {
+    "angular2-cli": "*",
     "grunt": "*",
     "grunt-cli": "*",
     "grunt-browser-sync": "*",
@@ -44,8 +45,6 @@
     "karma": "*",
     "karma-chrome-launcher": "*",
     "karma-jasmine": "*",
-    "protractor": "*",
-    "silent-error": "*",
     "typings": "*"
   }
 }
