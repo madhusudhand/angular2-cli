@@ -17,7 +17,8 @@
     "grunt": "grunt",
     "grunt:dev": "grunt dev",
     "grunt:dist": "grunt dist",
-    "grunt:serve": "grunt serve"
+    "grunt:serve": "grunt serve",
+    "test": "karma start karma.conf.js"
   },
   "dependencies": {
     "angular2": "*",
@@ -37,6 +38,13 @@
     "grunt-contrib-watch": "*",
     "grunt-newer": "*",
     "grunt-sass": "*",
-    "grunt-ts": "*"
+    "grunt-ts": "*",
+    "tslint": "*",
+    "jasmine-core": "*",
+    "jasmine-spec-reporter": "*",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-jasmine": "*",
+    "typings": "*"
   }
 }
