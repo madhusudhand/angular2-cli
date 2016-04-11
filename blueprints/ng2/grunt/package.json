@@ -11,13 +11,9 @@
   "main": "Gruntfile.js",
   "angular2-cli": {},
   "scripts": {
-    "start": "npm run grunt:serve",
-    "build:dev": "npm run grunt:dev",
-    "build:dist": "npm run grunt:dist",
-    "grunt": "grunt",
-    "grunt:dev": "grunt dev",
-    "grunt:dist": "grunt dist",
-    "grunt:serve": "grunt serve",
+    "start": "grunt serve",
+    "build:dev": "grunt dev",
+    "build:dist": "grunt dist",
     "test": "karma start karma.conf.js"
   },
   "dependencies": {
