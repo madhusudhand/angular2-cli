@@ -8,14 +8,6 @@ module.exports = function(grunt){
   var config = {
     pkg: grunt.file.readJSON('package.json'),
 
-    clean: {
-      options: {
-        force: true
-      },
-      pre_build: ['<%= build_dir %>', '<%= temp_dir %>'],
-      post_build: ['<%= temp_dir %>']
-    },
-
     jade: {
       dev: {
         options: { pretty: true },
@@ -181,7 +173,6 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
@@ -191,9 +182,8 @@ module.exports = function(grunt){
 
   grunt.initConfig(grunt.util._.extend(config, build_config, libraries));
 
-  grunt.registerTask('default', ['clean:pre_build']);
+  grunt.registerTask('default', []);
   grunt.registerTask('dev', [
-    'clean:pre_build',
     'jade:dev',
     'ts',
     'concat:sass',
@@ -207,7 +197,6 @@ module.exports = function(grunt){
     'sass',
     'cssmin',
     'uglify',
-    'clean:post_build'
   ]);
 
   grunt.registerTask('serve', [

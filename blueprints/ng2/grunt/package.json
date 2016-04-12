@@ -25,7 +25,6 @@
     "grunt": "*",
     "grunt-cli": "*",
     "grunt-browser-sync": "*",
-    "grunt-contrib-clean": "*",
     "grunt-contrib-concat": "*",
     "grunt-contrib-copy": "*",
     "grunt-contrib-cssmin": "*",
