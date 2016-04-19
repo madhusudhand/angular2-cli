@@ -26,7 +26,6 @@
     "grunt-cli": "*",
     "grunt-browser-sync": "*",
     "grunt-contrib-concat": "*",
-    "grunt-contrib-copy": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-jade": "*",
     "grunt-contrib-uglify": "*",

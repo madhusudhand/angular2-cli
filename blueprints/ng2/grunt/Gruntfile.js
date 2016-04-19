@@ -98,34 +98,6 @@ module.exports = function(grunt){
       }
     },
 
-    copy: {
-      vendor: {
-        expand: true,
-        cwd: 'node_modules/',
-        src: '<%= vendor %>',
-        dest: '<%= build_dir %>/vendor/'
-      },
-      thirdparty: {
-        expand: true,
-        cwd: 'node_modules/',
-        src: '<%= thirdparty %>',
-        dest: '<%= build_dir %>/thirdparty/'
-      },
-      assets: {
-        expand: true,
-        cwd: '<%= app_dir %>/',
-        src: ['assets/**'],
-        dest: '<%= build_dir %>/'
-      },
-      dev: {
-        expand: true,
-        cwd: '<%= temp_dir %>/',
-        src: ['*.js','**/*.js','*.js.map','**/*.js.map'],
-        dest: '<%= build_dir %>/'
-      }
-    },
-
-
     watch: {
 
       options: {
@@ -174,7 +146,6 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jade');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-ts');
   grunt.loadNpmTasks('grunt-browser-sync');
@@ -187,8 +158,7 @@ module.exports = function(grunt){
     'jade:dev',
     'ts',
     'concat:sass',
-    'sass',
-    'copy',
+    'sass'
   ]);
   grunt.registerTask('dist', [
     'init',
