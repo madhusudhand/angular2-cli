@@ -1,6 +1,6 @@
 {
   "name": "angular2-cli",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Command Line Interface for developing Angular 2 apps",
   "main": "./lib/cli/index.js",
   "scripts": {
@@ -37,7 +37,8 @@
     "lodash": "^4.7.0",
     "log-update": "^1.0.2",
     "object-assign": "^4.0.1",
-    "promise": "^7.1.1"
+    "promise": "^7.1.1",
+    "typings-core": "^0.3.0"
   },
   "devDependencies": {
     "eslint": "^2.4.0"
