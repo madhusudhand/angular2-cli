@@ -1,6 +1,6 @@
 {
   "name": "angular2-cli",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Command Line Interface for developing Angular 2 apps",
   "main": "./lib/cli/index.js",
   "scripts": {
