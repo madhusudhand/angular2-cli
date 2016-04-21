@@ -8,14 +8,6 @@ module.exports = function(grunt){
   var config = {
     pkg: grunt.file.readJSON('package.json'),
 
-    clean: {
-      options: {
-        force: true
-      },
-      pre_build: ['<%= build_dir %>', '<%= temp_dir %>'],
-      post_build: ['<%= temp_dir %>']
-    },
-
     jade: {
       dev: {
         options: { pretty: true },
@@ -106,34 +98,6 @@ module.exports = function(grunt){
       }
     },
 
-    copy: {
-      vendor: {
-        expand: true,
-        cwd: 'node_modules/',
-        src: '<%= vendor %>',
-        dest: '<%= build_dir %>/vendor/'
-      },
-      thirdparty: {
-        expand: true,
-        cwd: 'node_modules/',
-        src: '<%= thirdparty %>',
-        dest: '<%= build_dir %>/thirdparty/'
-      },
-      assets: {
-        expand: true,
-        cwd: '<%= app_dir %>/',
-        src: ['assets/**'],
-        dest: '<%= build_dir %>/'
-      },
-      dev: {
-        expand: true,
-        cwd: '<%= temp_dir %>/',
-        src: ['*.js','**/*.js','*.js.map','**/*.js.map'],
-        dest: '<%= build_dir %>/'
-      }
-    },
-
-
     watch: {
 
       options: {
@@ -181,9 +145,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jade');
-  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-ts');
   grunt.loadNpmTasks('grunt-browser-sync');
@@ -191,14 +153,12 @@ module.exports = function(grunt){
 
   grunt.initConfig(grunt.util._.extend(config, build_config, libraries));
 
-  grunt.registerTask('default', ['clean:pre_build']);
+  grunt.registerTask('default', []);
   grunt.registerTask('dev', [
-    'clean:pre_build',
     'jade:dev',
     'ts',
     'concat:sass',
-    'sass',
-    'copy',
+    'sass'
   ]);
   grunt.registerTask('dist', [
     'init',
@@ -207,7 +167,6 @@ module.exports = function(grunt){
     'sass',
     'cssmin',
     'uglify',
-    'clean:post_build'
   ]);
 
   grunt.registerTask('serve', [
