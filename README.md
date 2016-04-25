@@ -4,6 +4,8 @@
 
 Kick start your Angular-2 app **super fast**.
 
+It is a grunt based tool. lets you configure your own tasks.
+
 ## Setup
 
 > Install [Node.js].
@@ -54,8 +56,8 @@ your-app/src/app
  - Always keep single Component in single file and name it accordingly.
  - Do not create folder structure such as one for `components`, one for `templates`, one for `CSS` etc.
  - Keep the component (`.ts`), its template (`.jade`), its styling (`.scss`) and the test files (`.spec.ts`) all in a single folder and name all of them same. [folder and files]
- - Keep the app origanized by creating hierarchy of folders. It is always good idea to limit this hierarchy to atmost 5 levels.
- - Please do refere [John Papa's Angular 2 style-guide][a2sg].
+ - Keep the app organized by creating hierarchy of folders. It is always good idea to limit this hierarchy to at most 5 levels.
+ - Please do refer [John Papa's Angular 2 style-guide][a2sg].
 
 #Scaffolding
 

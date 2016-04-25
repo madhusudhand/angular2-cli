@@ -1,10 +1,11 @@
 {
   "name": "angular2-cli",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "description": "Command Line Interface for developing Angular 2 apps",
   "main": "./lib/cli/index.js",
   "scripts": {
-    "test": "eslint lib"
+    "test": "eslint lib",
+    "lint": "eslint lib"
   },
   "bin": {
     "ng2": "./bin/ng2"
