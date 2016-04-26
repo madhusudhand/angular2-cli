@@ -142,7 +142,6 @@ module.exports = function(grunt){
 
   grunt.initConfig(grunt_config);
 
-  grunt.registerTask('default', []);
   grunt.registerTask('dev', [
     'jade:dev',
     'ts',
