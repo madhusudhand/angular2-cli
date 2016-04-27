@@ -13,7 +13,7 @@
     "task-runner": "grunt"
   },
   "scripts": {
-    "start": "grunt serve",
+    "serve": "grunt serve",
     "build:dev": "grunt dev",
     "build:dist": "grunt dist",
     "test": "karma start karma.conf.js"

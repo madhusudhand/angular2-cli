@@ -13,7 +13,7 @@
     "task-runner": "gulp"
   },
   "scripts": {
-    "start": "gulp serve",
+    "serve": "gulp serve",
     "build:dev": "gulp dev",
     "build:dist": "gulp dist",
     "test": "karma start karma.conf.js"
