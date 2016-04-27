@@ -4,7 +4,7 @@
 
 Kick start your Angular-2 app **super fast**.
 
-You can setup your **App** with two available task runners; either **Grunt** or **Gulp** and you can configure additional tasks of your own choice.
+You can setup your **App** with two available task runners **Grunt** or **Gulp**.
 
 ## Setup
 
@@ -16,8 +16,10 @@ $ npm install -g angular2-cli
 
 ## Usage
 
-> ng2 --help
-> ng2 <command> --help
+```sh
+$ ng2 --help
+$ ng2 <command> --help
+```
 
 Creating your angular2 app
 
