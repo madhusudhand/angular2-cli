@@ -9,7 +9,9 @@
     "angular2-cli"
   ],
   "main": "gulpfile.js",
-  "angular2-cli": {},
+  "angular2-cli": {
+    "task-runner": "gulp"
+  },
   "scripts": {
     "start": "gulp serve",
     "build:dev": "gulp dev",
@@ -17,10 +19,25 @@
     "test": "karma start karma.conf.js"
   },
   "dependencies": {
+    "angular2": "*",
+    "systemjs": "*"
   },
   "devDependencies": {
     "angular2-cli": "*",
+    "browser-sync": "*",
     "gulp": "*",
-    "browser-sync": "*"
+    "gulp-concat": "*",
+    "gulp-csso": "*",
+    "gulp-jade": "*",
+    "gulp-newer": "*",
+    "gulp-sass": "*",
+    "gulp-typescript": "*",
+    "gulp-watch": "*",
+    "tslint": "*",
+    "jasmine-core": "*",
+    "jasmine-spec-reporter": "*",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-jasmine": "*"
   }
 }

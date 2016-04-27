@@ -9,7 +9,9 @@
     "angular2-cli"
   ],
   "main": "Gruntfile.js",
-  "angular2-cli": {},
+  "angular2-cli": {
+    "task-runner": "grunt"
+  },
   "scripts": {
     "start": "grunt serve",
     "build:dev": "grunt dev",

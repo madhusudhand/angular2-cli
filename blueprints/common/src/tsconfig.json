@@ -7,7 +7,6 @@
     "sourceMap": true,
     "outDir": "../dist/",
     "mapRoot": "",
-    "rootDir": "./src",
     "sourceRoot": "/",
     "declaration": false,
     "noEmitOnError": true,
