@@ -34,10 +34,10 @@ module.exports = function(grunt){
       dist: {
         files: [{
           expand: true,
-          cwd: config.temp_dir,
-          src: ['*.scss'],
+          cwd: config.app_dir,
+          src: config.app_files.sass,
           dest: config.build_dir,
-          ext: '.min.css'
+          ext: '.css'
         }]
       }
     },
@@ -48,12 +48,12 @@ module.exports = function(grunt){
       }
     },
 
-    concat: {
-      sass: {
-        src: [config.app_dir + '/*.scss', config.app_dir + '/**/*.scss'],
-        dest: config.temp_dir + '/' + config.app_files.css_file + '.scss',
-      }
-    },
+    // concat: {
+    //   sass: {
+    //     src: [config.app_dir + '/*.scss', config.app_dir + '/**/*.scss'],
+    //     dest: config.temp_dir + '/' + config.app_files.css_file + '.scss',
+    //   }
+    // },
 
     uglify: {
       options: {
@@ -79,9 +79,9 @@ module.exports = function(grunt){
         files: [{
           expand: true,
           cwd: config.temp_dir,
-          src: [config.app_files.css_file + '.min.css'],
+          src: [config.app_files.css_file + '.css'],
           dest: config.build_dir,
-          ext: '.min.css'
+          ext: '.css'
         }]
       }
     },
@@ -106,7 +106,7 @@ module.exports = function(grunt){
       // sass watch
       sass: {
         files: [config.app_dir + '/*.scss', config.app_dir + '/**/*.scss'],
-        tasks: ['concat:sass', 'sass']
+        tasks: ['sass']
       }
 
     },
@@ -133,7 +133,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-concat');
+  // grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-ts');
@@ -145,13 +145,13 @@ module.exports = function(grunt){
   grunt.registerTask('dev', [
     'jade:dev',
     'ts',
-    'concat:sass',
+    // 'concat:sass',
     'sass'
   ]);
   grunt.registerTask('dist', [
     'init',
     'jade:dist',
-    'concat',
+    // 'concat',
     'sass',
     'cssmin',
     'uglify',

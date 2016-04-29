@@ -5,10 +5,12 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(charset="utf-8")
     base(href="/")
-    //- link(rel="stylesheet" href="app.min.css")
+    link(rel="shortcut icon" type="image/png" href="./assets/img/favicon.ico")
+    //- link(rel="stylesheet" href="./assets/style/style.css")
   body
     app
-      include _init
+      div(style="text-align:center;margin-top:100px")
+        | Loading....
     
     script(src="./vendor/es6-shim/es6-shim.min.js")
     script(src="./vendor/systemjs/dist/system-polyfills.js")
@@ -22,13 +24,8 @@ html
     script(src="./vendor/angular2/bundles/router.dev.js")
 
     script
-      | System.config({
-      |   packages: {        
-      |     app: {
-      |       format: 'register',
-      |       defaultExtension: 'js'
-      |     }
-      |   }
-      | });
-      | System.import('bootstrap.js')
-      |       .then(null, console.error.bind(console));
+      | System.import('system-config.js').then(function(systemConfig) {
+      |   System.config(systemConfig.config);
+      | }).then(function () {
+      |   System.import('bootstrap.js')
+      | }).catch(console.error.bind(console));
