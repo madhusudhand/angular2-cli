@@ -44,6 +44,7 @@
     "lodash": "^4.7.0",
     "log-update": "^1.0.2",
     "promise": "^7.1.1",
+    "pug": "^2.0.0-alpha6",
     "typings-core": "^0.3.0"
   },
   "devDependencies": {
