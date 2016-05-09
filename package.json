@@ -31,6 +31,7 @@
   "dependencies": {
     "browser-sync": "^2.12.5",
     "child-process-promise": "^1.1.0",
+    "chokidar": "^1.4.3",
     "cli-spinners": "^0.1.2",
     "colors": "^1.1.2",
     "commander": "^2.9.0",
