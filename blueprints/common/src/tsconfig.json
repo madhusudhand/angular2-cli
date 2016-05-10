@@ -7,7 +7,6 @@
     "sourceMap": true,
     "outDir": "../dist/",
     "mapRoot": "",
-    "sourceRoot": "/",
     "declaration": false,
     "noEmitOnError": true,
     "emitDecoratorMetadata": true,
