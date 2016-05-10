@@ -1,0 +1,14 @@
+{
+  "dev": {
+    "services" : {
+      "api": "localhost:1234",
+      "auth": ""
+    }
+  },
+  "prod": {
+    "services" : {
+      "api": "",
+      "auth": ""
+    }
+  }
+}

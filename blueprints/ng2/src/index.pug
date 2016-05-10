@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title Angular 2 App
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(charset="utf-8")
+    base(href="/")
+    link(rel="shortcut icon" type="image/png" href="./assets/img/favicon.ico")
+    //- link(rel="stylesheet" href="./assets/style/style.css")
+  body
+    app
+      div(style="text-align:center;margin-top:100px")
+        | Loading....
+    
+    script(src="./vendor/es6-shim/es6-shim.min.js")
+    script(src="./vendor/systemjs/dist/system-polyfills.js")
+    script(src="./vendor/angular2/es6/dev/src/testing/shims_for_IE.js")
+
+    script(src="./vendor/angular2/bundles/angular2-polyfills.js")
+    script(src="./vendor/systemjs/dist/system.src.js")
+    script(src="./vendor/rxjs/bundles/Rx.js")
+    script(src="./vendor/angular2/bundles/angular2.dev.js")
+    script(src="./vendor/angular2/bundles/http.dev.js")
+    script(src="./vendor/angular2/bundles/router.dev.js")
+
+    script
+      | System.import('system-config.js').then(function(systemConfig) {
+      |   System.config(systemConfig.config);
+      | }).then(function () {
+      |   System.import('bootstrap.js')
+      | }).catch(console.error.bind(console));

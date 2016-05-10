@@ -1,0 +1,17 @@
+{
+  "build_dir": "dist",
+  "temp_dir": "tmp",
+  "app_dir": "src",
+
+  "app_files": {
+    "js": ["*.js","**/*.js"],
+    "sass": ["*.scss","**/*.scss"],
+    "jade": ["*.jade","**/*.jade","!_*.jade","!**/_*.js"],
+    "css_file": "bundle",
+    "js_file": "bundle"
+  },
+
+  "test_files": {
+    "js": []
+  }
+}

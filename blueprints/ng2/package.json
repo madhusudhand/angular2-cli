@@ -1,0 +1,29 @@
+{
+  "name": "app-name",
+  "license": "Apache-2.0",
+  "private": true,
+  "version": "0.0.0",
+  "readme": "README.md",
+  "keywords": [
+    "angular",
+    "angular2-cli"
+  ],
+  "main": "gulpfile.js",
+  "angular2-cli": {},
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "dependencies": {
+    "angular2": "*",
+    "systemjs": "*"
+  },
+  "devDependencies": {
+    "angular2-cli": "*",
+    "tslint": "*",
+    "jasmine-core": "*",
+    "jasmine-spec-reporter": "*",
+    "karma": "*",
+    "karma-chrome-launcher": "*",
+    "karma-jasmine": "*"
+  }
+}
