@@ -6,6 +6,23 @@
   },
   "rules": {
     "strict": 0,
-    "no-underscore-dangle": 0
+    "no-underscore-dangle": 0,
+    "no-multi-spaces": [2, {
+      "exceptions": {
+        "VariableDeclarator": true ,
+        "Property": true
+      }
+    }],
+    "key-spacing": [2, {
+      "singleLine": {
+        "beforeColon": false,
+        "afterColon": true
+      },
+      "multiLine": {
+        "beforeColon": true,
+        "afterColon": true,
+        "align": "colon"
+      }
+    }]
   }
 }
