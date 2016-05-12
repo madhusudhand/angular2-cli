@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   moduleId: __moduleName,
   selector: '<%= selector %>',
-  templateUrl: '<%= dashedComponentName %>.component.html',
-  styleUrls: ['<%= dashedComponentName %>.component.css']
+  templateUrl: '<%= dashedModuleName %>.component.html',
+  styleUrls: ['<%= dashedModuleName %>.component.css']
 })
-export class <%= componentName %>Component implements OnInit {
+export class <%= moduleName %>Component implements OnInit {
 
   constructor() {}
 
