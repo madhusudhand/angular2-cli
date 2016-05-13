@@ -4,6 +4,13 @@
 
 Kick start your Angular-2 app **super fast**.
 
+## Highlights
+
+* [Angular 2][angular] with [Typescript][ts]
+* [Pug] (was Jade) - templating
+* [SASS]/[LESS] - Pre-processors
+* Scaffolding - generate modules
+
 ## Setup
 
 > Install [Node.js].
@@ -12,7 +19,7 @@ Kick start your Angular-2 app **super fast**.
 $ npm install -g angular2-cli
 ```
 
-## Usage
+## Basic Usage
 
 ```sh
 $ ng2 --help
@@ -39,17 +46,6 @@ Running tests
 $ ng2 test
 ```
 
-#### About
-
-* [Angular 2][angular] with [Typescript][ts]
-* [Pug] - templating
-* [SASS/LESS] - styling
-
-#Scaffolding
-
-> Coming soon
-
-
 ## License
 ----
 
@@ -59,9 +55,8 @@ $ ng2 test
    [angular]: <angular.io>
    [ut]: <https://docs.angularjs.org/guide/unit-testing>
    [ts]: <http://www.typescriptlang.org>
-   [jade]: <http://jade-lang.com>
-   [sass]: <http://sass-lang.com>
-   [grunt]: <https://gruntjs.com>
+   [pug]: <http://jade-lang.com>
+   [SASS]: <http://sass-lang.com>
+   [LESS]: <http://lesscss.org>
    [node.js]: <http://nodejs.org>
-   [MIT]: <https://github.com/madhusudhand/angular2-quickstart/blob/master/LICENSE>
-   [a2sg]: <https://github.com/johnpapa/angular-styleguide/blob/master/a2/README.md>
+   [MIT]: <https://github.com/madhusudhand/angular2-cli/blob/master/LICENSE>
