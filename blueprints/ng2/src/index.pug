@@ -11,21 +11,13 @@ html
     app
       div(style="text-align:center;margin-top:100px")
         | Loading....
-    
+
+
     script(src="./vendor/es6-shim/es6-shim.min.js")
-    script(src="./vendor/systemjs/dist/system-polyfills.js")
-    script(src="./vendor/angular2/es6/dev/src/testing/shims_for_IE.js")
-
-    script(src="./vendor/angular2/bundles/angular2-polyfills.js")
     script(src="./vendor/systemjs/dist/system.src.js")
-    script(src="./vendor/rxjs/bundles/Rx.js")
-    script(src="./vendor/angular2/bundles/angular2.dev.js")
-    script(src="./vendor/angular2/bundles/http.dev.js")
-    script(src="./vendor/angular2/bundles/router.dev.js")
-
+    script(src="vendor/reflect-metadata/Reflect.js")
+    script(src="vendor/zone.js/dist/zone.js")
     script
-      | System.import('system-config.js').then(function(systemConfig) {
-      |   System.config(systemConfig.config);
-      | }).then(function () {
+      | System.import('system-config.js').then(function () {
       |   System.import('bootstrap.js')
       | }).catch(console.error.bind(console));

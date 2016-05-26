@@ -1,10 +1,7 @@
-import {bootstrap} from 'angular2/platform/browser';
+import {bootstrap} from '@angular/platform-browser-dynamic';
 import {AppComponent} from './shared/app.component/app.component';
-import {ROUTER_PROVIDERS} from 'angular2/router';
-// import {enableProdMode} from 'angular2/core';
+// import {enableProdMode} from '@angular/core';
 
-bootstrap(AppComponent, [
-  ROUTER_PROVIDERS
-]);
+bootstrap(AppComponent);
 
 // enableProdMode();

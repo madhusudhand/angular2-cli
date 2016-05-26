@@ -41,6 +41,6 @@ describe('Component: <%= moduleName %>', () => {
   `,
   directives: [<%= moduleName %>Component]
 })
-class <%= moduleName %>ComponentTest {
-  
+class <%= moduleName %>ComponentTestController {
+
 }

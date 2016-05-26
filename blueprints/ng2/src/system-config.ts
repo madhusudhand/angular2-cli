@@ -1,24 +1,51 @@
+/***********************************************************************************************
+ * User Configuration.
+ **********************************************************************************************/
+/** Map relative paths to URLs. */
+const map: any = {
+};
+
+/** User packages configuration. */
+const packages: any = {
+};
+
+
+/****************************************************************
+ * Do not modify anything. It is completely managed by the CLI. *
+ ****************************************************************/
 const barrels: string[] = [
-  'protected',
-  'public',
-  'shared',
+  // Angular specific barrels.
+  '@angular/core',
+  '@angular/common',
+  '@angular/compiler',
+  '@angular/http',
+  '@angular/router',
+  '@angular/platform-browser',
+  '@angular/platform-browser-dynamic',
   /** @cli-barrel */
+
+  // Thirdparty barrels.
+  'rxjs',
+
+  // App specific barrels.
+  'public',
+  'protected',
+  'shared',
 ];
 
-function createPackageConfig(barrelList: string[]): any {
-  return barrelList.reduce((barrelConfig: any, barrelName: string) => {
-    barrelConfig[barrelName] = {
-      format: 'register',
-      defaultJSExtensions: true
-    };
-    return barrelConfig;
-  }, {});
-}
+const cliPackages: any = {};
+barrels.forEach((barrelName: string) => {
+  cliPackages[barrelName] = { main: 'index' };
+});
 
 
-// Add your custom SystemJS configuration here.
-export const config: any = {
-  packages: Object.assign({
-    // Add your custom SystemJS packages here.
-  }, createPackageConfig(barrels))
-};
+declare var System: any;
+
+System.config({
+  map: {
+    '@angular': 'vendor/@angular',
+    'rxjs': 'vendor/rxjs',
+  },
+  packages: cliPackages
+});
+System.config({ map, packages });

@@ -45,6 +45,7 @@
     "gulp-typescript": "^2.13.0",
     "lodash": "^4.7.0",
     "log-update": "^1.0.2",
+    "ncp": "^2.0.0",
     "promise": "^7.1.1",
     "q": "^1.4.1",
     "typings-core": "^0.3.0"
