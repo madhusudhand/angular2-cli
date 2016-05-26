@@ -22,15 +22,34 @@ const barrels: string[] = [
   '@angular/router',
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
-  /** @cli-barrel */
+  /** @angular-barrel */
 
   // Thirdparty barrels.
   'rxjs',
+  /** @thirdparty-barrel */
 
   // App specific barrels.
   'public',
   'protected',
   'shared',
+
+  // Routes
+  /** @route-barrel */
+
+  // Components
+  /** @component-barrel */
+
+  // Directives
+  /** @directive-barrel */
+
+  // Services
+  /** @service-barrel */
+
+  // Pipes
+  /** @pipe-barrel */
+
+  // Other
+  /** @other-barrel */
 ];
 
 const cliPackages: any = {};
