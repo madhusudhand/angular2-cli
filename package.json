@@ -49,6 +49,7 @@
     "ncp": "^2.0.0",
     "promise": "^7.1.1",
     "q": "^1.4.1",
+    "systemjs-builder": "^0.15.18",
     "typings-core": "^0.3.0"
   },
   "devDependencies": {
