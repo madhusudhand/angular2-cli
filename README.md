@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/madhusudhand/angular2-cli.svg?branch=master)](https://travis-ci.org/madhusudhand/angular2-cli)
 
-Kick start your Angular-2 app **super fast**.
+Kick start your Angular-2 app.
 
 ## Highlights
 
@@ -44,6 +44,16 @@ Running tests
 
 ```sh
 $ ng2 test
+```
+
+Other available commands
+
+```sh
+$ ng2 build --dev
+$ ng2 build --prod
+
+$ ng2 serve --dev
+$ ng2 serve --prod
 ```
 
 ## License
