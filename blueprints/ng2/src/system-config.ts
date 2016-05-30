@@ -29,6 +29,7 @@ const barrels: string[] = [
   /** @thirdparty-barrel */
 
   // App specific barrels.
+  './',
   'public',
   'protected',
   'shared',
