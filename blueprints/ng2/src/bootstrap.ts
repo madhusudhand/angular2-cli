@@ -1,10 +1,9 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
-import { enableProdMode } from '@angular/core';
 import { AppComponent } from './shared/app.component/app.component';
-import { environment } from './environment';
 
-if (environment.production) {
+// @if ENV='prod'
+  import { enableProdMode } from '@angular/core';
   enableProdMode();
-}
+// @endif
 
 bootstrap(AppComponent);

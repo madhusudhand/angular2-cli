@@ -14,8 +14,16 @@
     "test": "karma start karma.conf.js"
   },
   "dependencies": {
-    "angular2": "*",
-    "systemjs": "*"
+    "@angular/common": "*",
+    "@angular/compiler": "*",
+    "@angular/core": "*",
+    "@angular/http": "*",
+    "@angular/platform-browser": "*",
+    "@angular/platform-browser-dynamic": "*",
+    "@angular/router": "*",
+    "reflect-metadata": "*",
+    "systemjs": "*",
+    "zone.js": "*"
   },
   "devDependencies": {
     "angular2-cli": "*",
