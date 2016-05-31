@@ -1,3 +1,3 @@
-# Angular App
+# <%= appName %>
 
-Read me for your angular app.
+README
