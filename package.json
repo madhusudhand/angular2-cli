@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/madhusudhand/angular2-cli#readme",
   "dependencies": {
+    "bluebird": "^3.4.0",
     "browser-sync": "^2.12.10",
     "child-process-promise": "^2.0.2",
     "chokidar": "^1.5.1",
