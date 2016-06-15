@@ -7,9 +7,9 @@ Kick start your Angular-2 app.
 ## Highlights
 
 * [Angular 2][angular] with [Typescript][ts]
-* [Pug] (was Jade) - templating
+* [Pug] (was Jade) - Templating
 * [SASS]/[LESS] - Pre-processors
-* Scaffolding - generate modules
+* Scaffolding - Generate modules
 
 ## Setup
 
