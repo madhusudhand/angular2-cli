@@ -30,14 +30,15 @@ const barrels: string[] = [
 
   // App specific barrels.
   './',
-  'public',
-  'protected',
-  'shared',
+  'app',
+  'app/protected',
+  'app/shared',
 
   // Routes
   /** @route-barrel */
 
   // Components
+  'app/app.component',
   /** @component-barrel */
 
   // Directives
