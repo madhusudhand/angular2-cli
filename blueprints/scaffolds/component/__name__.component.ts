@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  moduleId: __moduleName,
+  moduleId: module.id,
   selector: '<%= selector %>',
   templateUrl: '<%= dashedModuleName %>.component.html',
   styleUrls: ['<%= dashedModuleName %>.component.css']
