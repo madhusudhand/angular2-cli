@@ -3,6 +3,5 @@ export const environment: any = {
 
   service: {
     api: 'http://localhost:8000/api',
-    auth: 'http://localhost:8000/api/auth',
   }
 };

@@ -12,6 +12,5 @@ export const environment: any = {
 
   service: {
     api: '',
-    auth: '',
   }
 };
