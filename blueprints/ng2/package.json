@@ -10,6 +10,7 @@
   ],
   "angular2-cli": {},
   "scripts": {
+    "lint": "tslint \"src/**/*.ts\"",
     "test": "karma start karma.conf.js"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "angular2-cli": "*",
+    "codelyzer": "*",
     "tslint": "*",
     "jasmine-core": "*",
     "jasmine-spec-reporter": "*",

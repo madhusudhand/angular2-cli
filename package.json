@@ -1,6 +1,6 @@
 {
   "name": "angular2-cli",
-  "version": "0.1.28",
+  "version": "0.2.0",
   "description": "Command Line Interface for developing Angular 2 apps",
   "main": "./lib/cli/index.js",
   "scripts": {
@@ -42,7 +42,7 @@
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",
     "gulp-less": "^3.1.0",
-    "gulp-preprocess": "^2.0.0",
+    "gulp-modify-file": "^0.1.0",
     "gulp-pug": "^3.0.2",
     "gulp-sass": "^2.3.1",
     "gulp-sourcemaps": "^1.6.0",
