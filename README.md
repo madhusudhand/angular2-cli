@@ -1,15 +1,17 @@
-## angular2-cli [ A L P H A ]
+## angular2-cli
 
 [![Build Status](https://travis-ci.org/madhusudhand/angular2-cli.svg?branch=master)](https://travis-ci.org/madhusudhand/angular2-cli)
 
-Kick start your Angular-2 app.
-
-## Highlights
+## About
 
 * [Angular 2][angular] with [Typescript][ts]
 * [Pug] (was Jade) - Templating
 * [SASS]/[LESS] - Pre-processors
-* Scaffolding - Generate modules
+* Scaffolding - Generate
+  * component
+  * directive
+  * service
+  * pipe
 
 ## Setup
 
@@ -26,13 +28,13 @@ $ ng2 --help
 $ ng2 <command> --help
 ```
 
-Creating your angular2 app
+#### Creating your angular2 app
 
 ```sh
 $ ng2 create <app-name> [options]
 ```
 
-Running your app
+#### Running your app
 
 ```sh
 $ cd <app-folder>
@@ -40,13 +42,21 @@ $ ng2 init
 $ ng2 serve
 ```
 
-Running tests
+#### Generate scaffolds
+
+```sh
+$ ng2 make <scaffold-type> <scaffold-name>
+or
+$ ng2 make <scaffold-type> <path/to/scaffold/scaffold-name>
+```
+
+#### Running tests
 
 ```sh
 $ ng2 test
 ```
 
-Other available commands
+#### Build Environments
 
 ```sh
 $ ng2 build --dev
@@ -55,6 +65,18 @@ $ ng2 build --prod
 $ ng2 serve --dev
 $ ng2 serve --prod
 ```
+
+#### Service references
+
+Add environment specific **api** service urls in the following location
+> config/environment.[dev/prod].ts
+
+import `src/app/environment.ts` to your component and use the service variables.
+
+#### Copy
+
+If you need any files/folders thats needs to be copied such as `CNAME`
+add the entries in `angular-build.js` which is located in the project folder.
 
 ## License
 ----
