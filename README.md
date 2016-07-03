@@ -1,31 +1,26 @@
-## angular2-cli
-
 [![Build Status](https://travis-ci.org/madhusudhand/angular2-cli.svg?branch=master)](https://travis-ci.org/madhusudhand/angular2-cli)
 
-## About
-
 * [Angular 2][angular] with [Typescript][ts]
-* [Pug] (was Jade) - Templating
-* [SASS]/[LESS] - Pre-processors
-* Scaffolding - Generate
+* [Pug] (was Jade)
+* [SASS]/[LESS]
+* Generate scaffolds
   * component
   * directive
   * service
   * pipe
 
+** Note **
+This is very much a work in progress.
+Currently it is supported for Mac and Linux.
+Much more scaffolds are yet to come.
+
 ## Setup
 
 > Install [Node.js].
+Requires **Node 4 or greater**.
 
 ```sh
 $ npm install -g angular2-cli
-```
-
-## Basic Usage
-
-```sh
-$ ng2 --help
-$ ng2 <command> --help
 ```
 
 #### Creating your angular2 app
@@ -56,7 +51,13 @@ $ ng2 make <scaffold-type> <path/to/scaffold/scaffold-name>
 $ ng2 test
 ```
 
-#### Build Environments
+#### Lint
+
+```sh
+$ npm run lint
+```
+
+#### Dev and Production builds
 
 ```sh
 $ ng2 build --dev
@@ -66,17 +67,22 @@ $ ng2 serve --dev
 $ ng2 serve --prod
 ```
 
-#### Service references
+## Help
 
-Add environment specific **api** service urls in the following location
-> config/environment.[dev/prod].ts
+```sh
+$ ng2 --help
+$ ng2 <command> --help
+```
 
-import `src/app/environment.ts` to your component and use the service variables.
+#### placeholder for API references
 
-#### Copy
+Add environment specific **api** service urls `config/environment.[dev/prod].ts`
+import `src/app/environment.ts` to your component and use the service variables for your HTTP requests.
 
-If you need any files/folders thats needs to be copied such as `CNAME`
-add the entries in `angular-build.js` which is located in the project folder.
+#### Copy files/folders to build folder
+
+If you need any files/folders (such as `CNAME`) needs to be copied to build folder
+add those entries to `angular-build.js` which is located in the project folder.
 
 ## License
 ----
