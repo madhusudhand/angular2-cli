@@ -1,0 +1,15 @@
+.login.center-block(*ngIf="!jwt")
+  .row
+    form.col.s4.push-s4
+      .card-panel
+        .row
+          .input-field
+            input#email.validate(type="text", name="username", [(ngModel)]="username")
+            label(for="email") Email
+          .input-field
+            input#password.validate(type="password", name="password", [(ngModel)]="password")
+            label(for="password") Password
+          a.waves-effect.waves-light.btn((click)="login()") Login
+
+.login.center-block(*ngIf="jwt")
+  a.waves-effect.waves-light.btn((click)="logout()") Logout

@@ -20,6 +20,7 @@ const barrels: string[] = [
   '@angular/compiler',
   '@angular/http',
   '@angular/router',
+  '@angular/forms',
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
   /** @angular-barrel */
@@ -31,20 +32,28 @@ const barrels: string[] = [
   // App specific barrels.
   './',
   'app',
-  'app/protected',
   'app/shared',
 
+  // Modules
+  'app/login',
+  /** @module-barrel */
+
   // Routes
+  'app/login',
   /** @route-barrel */
 
   // Components
-  'app/app.component',
+  'app/auth/auth.component',
+  'app/auth/login.component',
+  'app/home/home.component',
+  'app/home/header.component',
   /** @component-barrel */
 
   // Directives
   /** @directive-barrel */
 
   // Services
+  'app/auth/auth.service',
   /** @service-barrel */
 
   // Pipes
@@ -59,13 +68,12 @@ barrels.forEach((barrelName: string) => {
   cliPackages[barrelName] = { main: 'index' };
 });
 
-
 declare var System: any;
 
 System.config({
   map: {
     '@angular': 'vendor/@angular',
-    'rxjs': 'vendor/rxjs',
+    'rxjs': 'vendor/rxjs'
   },
   packages: cliPackages
 });

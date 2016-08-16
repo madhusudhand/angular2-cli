@@ -10,7 +10,6 @@ export class <%= moduleName %>Component implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }

@@ -1,0 +1,31 @@
+.home {
+  width: 100%;
+
+  .page-content {
+    position: relative;
+    height: 500px;
+    width: auto;
+    background-color: #f3f3f3;
+    // background: url('https://getmdl.io/templates/android-dot-com/images/slide01.jpg') center 30% no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    .icon{
+      .material-icons {
+        font-size: 150px;
+        color: #00897B;
+        margin-left: 40px;
+      }
+      .text {
+        margin-top: -20px;
+      }
+    }
+
+    .auth-buttons {
+      margin-top: 50px;
+      .btn {
+        margin-left: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "auth",
+  "description": "",
+  "main": "",
+  "authors": [
+    "madhu"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "angular2-cli"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.7"
+  }
+}
