@@ -6,10 +6,12 @@
 * Generate scaffolds
   * component
   * directive
+  * route
   * service
   * pipe
 
-** Note **
+**Note**
+
 This is very much a work in progress.
 Currently it is supported for Mac and Linux.
 Much more scaffolds are yet to come.
@@ -17,7 +19,7 @@ Much more scaffolds are yet to come.
 ## Setup
 
 > Install [Node.js].
-Requires **Node 4 or greater**.
+(Requires **Node 4 or greater**)
 
 ```sh
 $ npm install -g angular2-cli
@@ -37,7 +39,7 @@ $ ng2 init
 $ ng2 serve
 ```
 
-#### Generate scaffolds
+#### Generating scaffolds
 
 ```sh
 $ ng2 make <scaffold-type> <scaffold-name>
