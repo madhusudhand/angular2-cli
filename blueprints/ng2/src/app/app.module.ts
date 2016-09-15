@@ -1,4 +1,5 @@
 import { NgModule }       from '@angular/core';
+import { HttpModule }     from '@angular/http';
 import { BrowserModule }  from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import {
@@ -6,26 +7,25 @@ import {
   appRoutes,
   appRouteProviders
 } from './';
-import { HomeComponent }    from './home/home.component';
-// module imports
-import { LoginModule } from './login/login.module';
-
-// import { HttpClient } from './common/HttpClient';
+import { HomeComponent }  from './home/home.component';
+import { HeaderComponent } from './home/header.component';
+import { LoginModule }    from './login/login.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    HttpModule,
     LoginModule,
     appRoutes,
   ],
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent,
   ],
   providers: [
     appRouteProviders,
-    // HttpClient
   ],
   bootstrap: [ AppComponent ]
 })

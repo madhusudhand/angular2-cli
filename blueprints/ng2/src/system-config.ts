@@ -68,6 +68,8 @@ barrels.forEach((barrelName: string) => {
   cliPackages[barrelName] = { main: 'index' };
 });
 
+cliPackages['rxjs'] = { main: 'Rx' };
+
 declare var System: any;
 
 System.config({

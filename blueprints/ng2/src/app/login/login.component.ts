@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService, AuthData } from '../auth/auth.service';
-import { HTTP_PROVIDERS } from '@angular/http';
 
 @Component({
   moduleId: module.id,
   selector: 'login',
   templateUrl: 'login.component.html',
   styleUrls: ['login.component.css'],
-  providers: [AuthService, HTTP_PROVIDERS],
+  providers: [AuthService],
 })
 export class LoginComponent implements OnInit {
   private jwt: string;
