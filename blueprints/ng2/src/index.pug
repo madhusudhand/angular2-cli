@@ -6,25 +6,12 @@ html
     meta(charset="utf-8")
     base(href="/")
     link(rel="shortcut icon" type="image/png" href="./assets/img/favicon.ico")
-    //- link(rel="stylesheet" href="./thirdparty/materialize/materialize.css")
-    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
   body
     app
       div(style="text-align:center;margin-top:100px")
         | Loading....
 
-
     //- script(src="./vendor/es6-shim/es6-shim.min.js")
-    script(src="https://google.github.io/traceur-compiler/bin/traceur.js")
-    script(src="./vendor/systemjs/dist/system.src.js")
     script(src="./vendor/reflect-metadata/Reflect.js")
     script(src="./vendor/zone.js/dist/zone.min.js")
-
-    script(src="https://code.jquery.com/jquery-3.1.0.min.js"
-           integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
-           crossorigin="anonymous")
-    //- script(src="./thirdparty/materialize/materialize.js")
-    script
-      | System.import('system-config.js').then(function () {
-      |   System.import('main.js')
-      | }).catch(console.error.bind(console));
+    script(src="./bundle.js")
