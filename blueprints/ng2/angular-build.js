@@ -14,6 +14,7 @@ module.exports = {
     //   { src: 'src/CNAME', dest: 'dist'}  -> this copies file to the given location
     'src/CNAME',
     { src: 'bower_components/materialize/bin/materialize.js', dest: 'dist/thirdparty/materialize' },
-    { src: 'bower_components/materialize/bin/materialize.css', dest: 'dist/thirdparty/materialize' }
+    { src: 'bower_components/materialize/bin/materialize.css', dest: 'dist/thirdparty/materialize' },
+    { src: 'traceur.js', dest: 'dist/thirdparty' }
   ]
 };

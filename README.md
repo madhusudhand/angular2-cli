@@ -3,18 +3,12 @@
 * [Angular 2][angular] with [Typescript][ts]
 * [Pug] (was Jade)
 * [SASS]/[LESS]
-* Generate scaffolds
-  * component
-  * directive
-  * route
-  * service
-  * pipe
 
 **Note**
 
 This is very much a work in progress.
+
 Currently it is supported for Mac and Linux.
-Much more scaffolds are yet to come.
 
 ## Setup
 
@@ -37,26 +31,6 @@ $ ng2 create <app-name> [options]
 $ cd <app-folder>
 $ ng2 init
 $ ng2 serve
-```
-
-#### Generating scaffolds
-
-```sh
-$ ng2 make <scaffold-type> <scaffold-name>
-or
-$ ng2 make <scaffold-type> <path/to/scaffold/scaffold-name>
-```
-
-#### Running tests
-
-```sh
-$ ng2 test
-```
-
-#### Lint
-
-```sh
-$ npm run lint
 ```
 
 #### Dev and Production builds
