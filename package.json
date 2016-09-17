@@ -49,9 +49,15 @@
     "lodash": "^4.13.1",
     "log-update": "^1.0.2",
     "ncp": "^2.0.0",
+    "node-sass": "^3.10.0",
+    "pug": "^2.0.0-beta6",
+    "pug-loader": "^2.3.0",
+    "sass-loader": "^4.0.2",
     "systemjs-builder": "^0.15.18",
     "through2": "^2.0.1",
-    "typings-core": "^1.0.1"
+    "ts-loader": "^0.8.2",
+    "typings-core": "^1.0.1",
+    "webpack": "^1.13.2"
   },
   "devDependencies": {
     "eslint": "^2.8.0",
