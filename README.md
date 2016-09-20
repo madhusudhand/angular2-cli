@@ -3,18 +3,13 @@
 * [Angular 2][angular] with [Typescript][ts]
 * [Pug] (was Jade)
 * [SASS]/[LESS]
-* Generate scaffolds
-  * component
-  * directive
-  * route
-  * service
-  * pipe
 
 **Note**
 
 This is very much a work in progress.
+
 Currently it is supported for Mac and Linux.
-Much more scaffolds are yet to come.
+
 
 ## Setup
 
@@ -37,14 +32,6 @@ $ ng2 create <app-name> [options]
 $ cd <app-folder>
 $ ng2 init
 $ ng2 serve
-```
-
-#### Generating scaffolds
-
-```sh
-$ ng2 make <scaffold-type> <scaffold-name>
-or
-$ ng2 make <scaffold-type> <path/to/scaffold/scaffold-name>
 ```
 
 #### Running tests
@@ -78,13 +65,15 @@ $ ng2 <command> --help
 
 #### placeholder for API references
 
-Add environment specific **api** service urls `config/environment.[dev/prod].ts`
-import `src/app/environment.ts` to your component and use the service variables for your HTTP requests.
+Add environment specific **api** service urls `src/app/environments/environment.[dev/prod].ts`
+
+import `src/app/environments/environment.ts` to your component and use the service variables for your HTTP requests.
 
 #### Copy files/folders to build folder
 
 If you need any files/folders (such as `CNAME`) needs to be copied to build folder
-add those entries to `angular-build.js` which is located in the project folder.
+
+add those entries to `build-config.js` which is located in the project folder.
 
 ## License
 ----
