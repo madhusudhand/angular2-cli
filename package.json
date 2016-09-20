@@ -1,6 +1,6 @@
 {
   "name": "angular2-cli",
-  "version": "0.2.3",
+  "version": "0.4.0",
   "description": "Command Line Interface for developing Angular 2 apps",
   "main": "./lib/cli/index.js",
   "scripts": {
@@ -51,8 +51,6 @@
     "ncp": "^2.0.0",
     "node-sass": "^3.10.0",
     "pug": "^2.0.0-beta6",
-    "pug-loader": "^2.3.0",
-    "sass-loader": "^4.0.2",
     "systemjs-builder": "^0.15.18",
     "through2": "^2.0.1",
     "ts-loader": "^0.8.2",
