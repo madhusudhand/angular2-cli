@@ -9,7 +9,7 @@ import {
 } from '@angular/http';
 
 import { AuthData } from './auth-data';
-import { environment } from '../../environment';
+import { environment } from '../../../environments';
 // import { HttpClient } from '../../common/httpclient';
 
 @Injectable()
