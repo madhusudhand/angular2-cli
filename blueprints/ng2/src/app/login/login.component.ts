@@ -2,10 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService, AuthData } from '../auth/auth.service';
 
 @Component({
-  // moduleId: module.id,
   selector: 'login',
-  templateUrl: './app/login/login.component.html',
-  styleUrls: ['./app/login/login.component.css'],
+  templateUrl: 'login.component.html',
+  styleUrls: ['login.component.css'],
   providers: [AuthService],
 })
 export class LoginComponent implements OnInit {

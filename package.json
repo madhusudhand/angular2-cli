@@ -1,6 +1,6 @@
 {
   "name": "angular2-cli",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Command Line Interface for developing Angular 2 apps",
   "main": "./lib/cli/index.js",
   "scripts": {
@@ -45,6 +45,7 @@
     "gulp-less": "^3.1.0",
     "gulp-pug": "^3.0.2",
     "gulp-sass": "^2.3.1",
+    "loader-utils": "^0.2.16",
     "lodash": "^4.13.1",
     "log-update": "^1.0.2",
     "ncp": "^2.0.0",
@@ -53,7 +54,7 @@
     "systemjs-builder": "^0.15.18",
     "typescript": "^2.0.3",
     "typings-core": "^1.0.1",
-    "webpack": "^1.13.2"
+    "webpack": "^2.1.0-beta.22"
   },
   "devDependencies": {
     "eslint": "^2.8.0",
