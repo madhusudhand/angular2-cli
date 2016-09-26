@@ -3,8 +3,8 @@ import { AuthService, AuthData } from '../auth/auth.service';
 
 @Component({
   selector: 'login',
-  templateUrl: 'login.component.html',
-  styleUrls: ['login.component.css'],
+  templateUrl: 'login.component.pug',
+  styleUrls: ['login.component.scss'],
   providers: [AuthService],
 })
 export class LoginComponent implements OnInit {
