@@ -1,15 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: '<%= selector %>',
-  templateUrl: '<%= dashedModuleName %>.component.html',
-  styleUrls: ['<%= dashedModuleName %>.component.css']
+  templateUrl: '<%= dashedModuleName %>.component.pug',
+  styleUrls: ['<%= dashedModuleName %>.component.<%= styleExtension %>']
 })
 export class <%= moduleName %>Component implements OnInit {
-
   constructor() {}
-
   ngOnInit() {}
-
 }

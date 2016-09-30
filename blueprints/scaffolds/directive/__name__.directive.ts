@@ -4,7 +4,5 @@ import { Directive } from '@angular/core';
   selector: '[<%= selector %>]'
 })
 export class <%= moduleName %> {
-
   constructor() {}
-
 }

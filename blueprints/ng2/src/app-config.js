@@ -17,7 +17,10 @@ module.exports = {
       prod    : 'environment.prod.ts',
     },
   },
-  code: {
+  development: {
+    defaultPort: 3000,
+  },
+  generator: {
     // work in progress
     // all components, directives will be prefixed with this
     prefix    : '', // ex: prefix: 'my'  --> my-home-component
