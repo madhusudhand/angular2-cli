@@ -1,13 +1,10 @@
 module.exports = {
-  project: {
-    version   : '0.0.0',
-    name      : '',
-  },
   app: {
     appDir    : 'app',
-    outDir    : 'dist',
-    assets    : 'assets',
-    index     : 'index.html',
+    buildDir  : 'dist',
+    tempDir   : 'temp',
+    assetsDir : 'assets',
+    index     : 'index.pug',
     main      : 'main.ts',
     vendor    : 'vendor.ts',
     tsconfig  : 'tsconfig.json',
@@ -18,11 +15,12 @@ module.exports = {
     },
   },
   development: {
-    defaultPort: 3000,
+    host: 'localhost',
+    port: 8000,
   },
   generator: {
     // work in progress
     // all components, directives will be prefixed with this
     prefix    : '', // ex: prefix: 'my'  --> my-home-component
-  }
+  },
 };
