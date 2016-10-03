@@ -1,12 +1,23 @@
 module.exports = {
-  vendorNpmFiles: [
-    // these will be copied from node_modules to dist/vendor
-  ],
-  otherFiles: [
-    // add any files that needs to be copied to dist or any given path
-    // valid values
-    //   'src/CNAME'                        -> this copies file to dist folder
-    //   { src: 'src/CNAME', dest: 'dist'}  -> this copies file to the given location
-    'src/CNAME',
+  // ADD ANY FILES / DIRECTORIES THAT NEEDS TO BE COPIED
+  copyFiles: [
+    /*
+    // copies file to dist
+    'src/file.txt',
+
+    // copies file to dist
+    {
+      from: 'src/file.txt',
+      to  : ''
+    },
+
+    // copies directory to the given path inside dist
+    {
+      from: 'bower_components/thirdparty/folder',
+      to  : 'vendor/thirdparty'
+    }
+
+    */
+
   ]
 };

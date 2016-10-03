@@ -14,7 +14,7 @@ Currently it is supported for Mac and Linux.
 ## Setup
 
 > Install [Node.js].
-(Requires **Node 4 or greater**)
+(Requires **Node 4 or greater** and **NPM 3**)
 
 ```sh
 $ npm install -g angular2-cli
